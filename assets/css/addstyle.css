@@ -1,0 +1,157 @@
+:root {
+    --d-background: #1d2327;
+    --d-linkindark: #fff;
+    --d-main: #ddd;
+    --d-bg-light: #fff;
+    --d-secondary: #f0f6fc;
+    --d-text-primary: #646970;
+    --d-text-dark: #1d2327;
+    --d-btn-primary: #2271b1;
+    --d-btn-secondary: #3e3e3e;
+    --d-disabled: #949494;
+}
+
+[dir="rtl"] {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    height: 100%;
+    position: relative;
+}
+
+.btn-link {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.all-blocks-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-input,
+.search-input:focus,
+.search-input:focus-visible {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+main h1,
+main p {
+    margin-bottom: 2rem;
+}
+
+.all-blocks a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.all-blocks li {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+[data-modal] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    line-height: 2rem;
+    backdrop-filter: brightness(0.6) blur(5px);
+}
+
+.modal-small .modal-body {
+    width: 20%;
+    height: 38rem;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid
+}
+
+.modal-activated {
+    visibility: visible;
+    opacity: 1;
+    transition: 500ms;
+}
+aside.add-post-left-panel{
+    line-height: 2.5rem;
+}
+aside.add-post-left-panel a{
+    text-decoration: none;
+    color: var(--d-btn-primary);
+}
+body.theme-d-addpost {
+    .bg-primary {
+        background-color: var(--d-btn-primary);
+        color: var(--d-linkindark);
+    }
+
+    .btn-secondary {
+        background-color: var(--d-btn-secondary);
+        color: var(--d-linkindark);
+    }
+
+    .bg-secondary {
+        background-color: var(--d-secondary);
+    }
+
+    [disabled] {
+        color: var(--d-disabled);
+    }
+
+    .divider {
+        background-color: var(--d-background);
+    }
+
+    aside,
+    aside header {
+        border-color: var(--d-text-primary);
+    }
+
+    main h1,
+    main p {
+        color: var(--d-text-primary);
+    }
+
+    .all-blocks a {
+        color: var(--d-text-primary);
+    }
+
+    .btn-outline-primary {
+        border: 1px solid var(--d-background);
+    }
+
+    [data-modal] {
+        border-color: var(--d-text-primary);
+        box-shadow: 1px 1px var(--d-text-primary);
+    }
+
+    .modal-small .modal-body {
+        border-color: var(--d-text-primary);
+    }
+}

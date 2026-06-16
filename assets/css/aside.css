@@ -1,0 +1,98 @@
+aside{
+    height: 100%; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10%;
+}
+aside ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+aside nav>ul>li{
+    position: relative;
+    width: 100%;
+}
+aside nav>ul>li:not(.active)>ul{
+    position: absolute;
+    right:100%;
+    top: 0;
+    width: 12rem;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms;
+}
+aside nav>ul>li:not(.active):nth-child(7)>ul,
+aside nav>ul>li:not(.active):nth-child(8)>ul,
+aside nav>ul>li:not(.active):nth-child(9)>ul,
+aside nav>ul>li:not(.active):nth-child(10)>ul,
+aside nav>ul>li:not(.active):nth-child(11)>ul,
+aside nav>ul>li:not(.active):nth-child(12)>ul,
+aside nav>ul>li:not(.active):nth-child(13)>ul,
+aside nav>ul>li:not(.active):nth-child(14)>ul,
+aside nav>ul>li:not(.active):nth-child(15)>ul,
+aside nav>ul>li:not(.active):nth-child(16)>ul,
+aside nav>ul>li:not(.active):nth-child(17)>ul,
+aside nav>ul>li:not(.active):nth-child(18)>ul,
+aside nav>ul>li:not(.active):nth-child(19)>ul,
+aside nav>ul>li:not(.active):nth-child(20)>ul
+{
+    position: absolute;
+    right:100%;
+    top: auto;
+    bottom: 50%;
+    width: 12rem;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms;
+    transform: translate(0,50%);
+}
+aside nav>ul>li:not(.active)>ul::after{
+    right: -10%;
+    border: 8px solid transparent;
+    border-left-color: #2c3338;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    z-index: 10000;
+}
+aside nav>ul>li:not(.active):nth-child(7)>ul::after,
+aside nav>ul>li:not(.active):nth-child(8)>ul::after,
+aside nav>ul>li:not(.active):nth-child(9)>ul::after,
+aside nav>ul>li:not(.active):nth-child(10)>ul::after,
+aside nav>ul>li:not(.active):nth-child(11)>ul::after,
+aside nav>ul>li:not(.active):nth-child(12)>ul::after,
+aside nav>ul>li:not(.active):nth-child(13)>ul::after,
+aside nav>ul>li:not(.active):nth-child(14)>ul::after,
+aside nav>ul>li:not(.active):nth-child(15)>ul::after,
+aside nav>ul>li:not(.active):nth-child(16)>ul::after,
+aside nav>ul>li:not(.active):nth-child(17)>ul::after,
+aside nav>ul>li:not(.active):nth-child(18)>ul::after,
+aside nav>ul>li:not(.active):nth-child(19)>ul::after,
+aside nav>ul>li:not(.active):nth-child(20)>ul::after
+{
+    right: -10%;
+    border: 8px solid transparent;
+    border-left-color: #2c3338;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    top: auto;
+    bottom: 50%;
+    z-index: 10000;
+    transform: translate(0,50%);
+}
+
+aside nav>ul>li:not(.active):hover>ul{
+    visibility: visible;
+    opacity: 1;
+    transition: 500ms;
+}

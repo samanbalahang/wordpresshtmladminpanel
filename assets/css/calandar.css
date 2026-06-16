@@ -1,0 +1,10 @@
+.calandar{
+    line-height: 2rem;
+    font-family: inherit;
+}
+.day{
+    border-radius: 90rem;
+}
+.slected{
+    background-color: lightblue;
+}

@@ -1,0 +1,64 @@
+header {
+    width: 100%;
+}
+
+header {
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+    }
+
+    & li {
+        position: relative;
+    }
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+        padding: 1.2rem;
+    }
+
+    &>ul {
+        display: flex;
+    }
+
+    &>ul {
+        & li {
+            &>ul {
+                position: absolute;
+                width: 10rem;
+                right: 0;
+                z-index: 2;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        & li:hover {
+            ul {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.sub-menu {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.has-child {
+    position: relative;
+}
+
+.has-child:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transition: 500ms;
+}
